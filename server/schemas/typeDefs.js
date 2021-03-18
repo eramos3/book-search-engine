@@ -5,24 +5,24 @@ type User {
     _id: ID
     username: String
     email: String
-    password: String
     bookCount: Int
     savedBooks: [Book]
   }
 
   type Book {
     bookId: String
-    authors: [Author]
+    authors: [String]
     description: String
     title: String
     image: String
     link: String
   }
 
-  input BookInput{
-    authors: [Author]
+  input BookInput {
+    authors: [String]
     description: String
     title: String
+    bookId: String
     image: String
     link: String
   }
@@ -36,6 +36,7 @@ type User {
     me: User
     users: [User]
     user(username: String!): User
+    savedBooks(username: String): [Book]
   }
 
   type Mutation {
@@ -46,3 +47,5 @@ type User {
   }
  
 `;
+
+module.exports = typeDefs;
