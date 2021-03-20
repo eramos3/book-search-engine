@@ -36,5 +36,5 @@ THEN I am logged out of the site and presented with a menu with the options Sear
 ```
 git clone git@github.com:eramos3/book-search-engine.git
 ```
-![Book Search Engine Screenshot](./src/assets/book-search.png)
+![Book Search Engine Screenshot](./img/book-search.png)
 [Book Search Engine page](https://arcane-brushlands-36937.herokuapp.com/)
